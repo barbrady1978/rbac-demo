@@ -11,6 +11,6 @@ Spring 4, Spring MVC, Spring REST, Spring Data JPA, memBD HSQL, Swagger (springf
 ./gradlew appRunDebug
 
 # Swagger end points
-[a link](http://localhost:8080/rest/swagger-ui.html)
+[http://localhost:8080/rest/swagger-ui.html](http://localhost:8080/rest/swagger-ui.html)
 
 
