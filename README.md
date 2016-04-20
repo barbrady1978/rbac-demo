@@ -2,7 +2,7 @@
 rbac first demo / design
 
 # Technologies
-Spring 4, Spring MVC, Spring REST, Spring Data JPA, memBD HSQL, Swagger (springfox), slf4j with logback
+Spring 4, Spring MVC, Spring REST, Spring Data JPA, memBD HSQL, Swagger (springfox), slf4j with logback, Gretty
 
 # RUN 
 ./gradlew appRun
