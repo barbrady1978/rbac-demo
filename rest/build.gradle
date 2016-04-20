@@ -1,0 +1,48 @@
+group 'com.tescobank.rbac'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'org.akhikhl.gretty'
+
+
+dependencies {
+    compile 'org.springframework:spring-webmvc',
+            'org.springframework:spring-web',
+            'org.springframework:spring-tx',
+            'org.springframework:spring-context',
+            'org.springframework:spring-jdbc',
+            'org.springframework.data:spring-data-jpa',
+            'org.springframework:spring-orm',
+            'org.springframework:spring-oxm',
+
+            // hibernate
+            'org.hibernate:hibernate-entitymanager',
+            'org.hibernate:hibernate-core',
+            'org.hibernate:hibernate-validator',
+            'org.hibernate.javax.persistence:hibernate-jpa-2.1-api',
+
+            // DB
+            'org.hsqldb:hsqldb',
+
+            // logging
+            'org.slf4j:jcl-over-slf4j',
+            'ch.qos.logback:logback-classic',
+
+            // Others
+            'com.fasterxml.jackson.core:jackson-databind',
+            'javax.servlet:javax.servlet-api',
+
+            // Swagger (spring-fox)
+            'io.springfox:springfox-swagger2:2.4.0',
+            'io.springfox:springfox-swagger-ui:2.4.0',
+            //'io.springfox:springfox-bean-validators',
+
+            project(":common")
+}
+
+gretty {
+    servletContainer = "tomcat8"
+    managedClassReload = true
+    logDir = "logs"
+    scanInterval = 1
+}

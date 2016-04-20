@@ -1,0 +1,5 @@
+rootProject.name = 'rbac'
+include 'rest'
+include 'web'
+include 'common'
+
