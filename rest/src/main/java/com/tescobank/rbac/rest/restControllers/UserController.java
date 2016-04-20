@@ -15,8 +15,7 @@ public class UserController {
     public User getUser(@PathVariable int id){
         return userService.findById(id);
     }
-
-    //sadf
+    
     @RequestMapping(value = {"/user/new"}, method = RequestMethod.POST)
     public void saveUser(@RequestBody User user){
         userService.save(user);
